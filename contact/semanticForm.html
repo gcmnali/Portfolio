@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <main style="width:50%;">
+        <section>
+            <h2>Profil</h2>
+            <p> Application Form</p>
+            <form action="semanticFormSubmit.html" method="post"  autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="line">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" tabindex="1" autocomplete="1" autofocus placeholder="Dr.">
+                    </div>
+                    <div class="line">
+                        <label for="fname">First Name: </label>
+                        <input type="text" id="fname" name="fname" required  tabindex="2" placeholder="Peter"><br><br>
+                    </div>
+                    <div class="line">
+                        <label for="lname">Last Name: </label>
+                        <input type="text" id="lname" name="lname" required tabindex="3" placeholder="Muster"><br><br>
+                    </div>
+                    <div class="line">
+                        <p>Gender: </p>
+                        <label for="masculine">M</label>
+                        <input type="radio" id="masculine" name="gender" value="masculine" tabindex="4">
+                        <label for="feminine" >F</label>
+                        <input type="radio" id="feminine" name="gender" value="feminine" tabindex="5">
+                        <label for="neuter">N</label>
+                        <input type="radio" id="neuter" name="gender" value="neuter" tabindex="6"><br><br>
+                    </div>
+                    <div class="line">
+                        <p>Language</p>
+                        <label for="de">DE</label>
+                        <input type="radio" id="de" name="lang" value="de" tabindex="7"><br>
+                        <label for="fr">FR</label>
+                        <input type="radio" id="fr" name="lang" value="fr" tabindex="8"><br>
+                        <label for="it">IT</label>
+                        <input type="radio" id="it" name="lang" value="it" tabindex="9"><br>
+                    </div>
+                </fieldset><br><br>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="line">
+                        <label for="email"> Email: </label>
+                        <input type="email" id="email" name="email" required placeholder="example@gmail.com" tabindex="10"><br><br>
+                    </div>
+                    <div class="line">
+                        <label for="tel">Phone Number: </label>
+                        <input type="tel" id="tel" name="tel" required placeholder="+41 00 000 00 00" tabindex="11"><br><br>
+                    </div>
+                </fieldset><br><br>
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <div class="line">
+                        <label for="company">Company :</label>
+                        <input type="text" id="company"><br>
+                    </div>
+                    <div class="line">
+                        <label for="address">Street / House Number :</label>
+                        <input type="text" id="address"><input type="number" id="hausnummer"><br>
+                    </div>
+                    <div class="line">
+                        <label for="plz">PLZ / Ort :</label>
+                        <input type="number" id="plz"><input type="text" id="ort"><br>
+                    </div>
+                    <div class="line">
+                        <label for="color">Which color do you prefer? </label>
+                        <input type="color" id="color" name="color" tabindex="12"><br><br>
+                    </div>
+                    <div class="line">
+                        <label for="season">Which season do you prefer? </label>
+                        <select name="season" id="season" tabindex="12">
+                            <option value="chose_one">chose one</option>
+                            <option value="winter">winter</option>
+                            <option value="autumn">autumn</option>
+                            <option value="summer">summer</option>
+                            <option value="spring">spring</option>
+                        </select>
+                    </div>
+                </fieldset><br><br>
+                <input type="submit" value="submit" tabindex="13">
+            </form>
+        </section>
+    </main>
+  </body>
+</html>

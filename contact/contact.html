@@ -1,48 +1,145 @@
-<form method="post" action="#">
-    <table>
-        <tr>
-            <td>Name :</td>
-            <td>
-                <input type="text" name="nameTxt">     
-            </td>
-        </tr>
-        <tr>
-            <td>Message :</td>
-            <td><input type="text" name="messageTxt" id=""></td>
-        </tr>
-        <tr>
-            <td>
-            </td>
-            <td>
-                <button type="button">Send Message</button>
-            </td>
-        </tr>
-    </table>
-    <label>Password :</label><input type="password">
-    <label>Email :</label><input type="email">
-    <label>Color :</label><input type="color">
-    <label>Datetime :</label><input type="datetime">
-    <label>Checkbox :</label><input type="checkbox">
-    <label>Slider :</label><input type="range">
-</form>
-<table>
-    <tr>
-        <td>Github</td>
-        <td>
-            <a href="#">Githublink</a>
-        </td>
-    </tr>
-    <tr>
-        <td>Linkedin</td>
-        <td>
-            <a href="#">Linkedin link</a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-        </td>
-        <td>
-            <a href="#">Address</a>
-        </td>
-    </tr>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- META PROPERTIES // OPEN GRAPH PROTOCOL-->
+    <meta property="og:title" content="Ali Göcmen">
+    <meta property="og:author" content="Ali Göcmen">
+    <meta property="og:title" content="A Basic HTML5 Template">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.aligocmen.com">
+    <meta property="og:description" content="Ali Göcmen's Portfolio Page">
+    <meta property="og:image" content="#">
+
+    
+    <!-- LINKS -->
+    <link rel="manifest" href="#site.webmanifest">
+    <link rel="apple-touch-icon" href="#icon.png">
+    <link rel="icon" type="image/png" href="../images/icon.png"/>
+    
+    <!-- CSS LINKS-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/hamIcon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <meta name="theme-color" content="#fafafa">
+    <title>A Basic HTML5 Template</title>
+  </head>
+
+  <!-- this is body of my page-->
+  <body>
+    <img id="bgImage">
+    <div id="mask"></div>
+
+    <article class="content">
+      <article id="showroom">
+
+        <div id="hamburgerMenu">
+          <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <section>
+            <nav>
+              <ul class="hamBar">
+                <li class="ham_links">
+                  <a href="../index.html">Home</a>
+                </li>
+                <li class="ham_links">
+                  <a href="hobbies/hobbies.html">Hobbies</a>
+                </li>
+                <li class="ham_links">
+                  <a href="../projects/projects.html">Projects</a>
+                </li>
+              </ul>
+          </nav>
+          </section>
+        </div>
+
+        <img src="../images/myphoto.jpeg" id="passPhoto" alt="photo">
+      </article>
+
+      <article id="app">
+        <!-- this is the main part of my webpage-->
+        <section class="header2">
+          <p>Contact</p>
+        </section>
+        <main>
+          <p>&#128231; ali.gocmen@powercoders.org</p>
+          <p>&#9742; +41772587046</p>
+          <p>&#127968; Brunnenstrasse 23, 3123 Belp</p>
+          <p>
+            <a href="http://linkedin.com/in/gcmn4li/" target="_blank" style="text-decoration: none;">
+              <img src="https://www.freeiconspng.com/uploads/linkedin-logo-3.png" style="width: 32px;"/>
+              Linkedin
+            </a>
+            <a href="https://github.com/gcmnali" target="_blank" style="text-decoration: none; padding-left: 20px;">
+              <img src="../images/Octocat.jpg" style="width: 32px;">
+              GitHub</a>
+          </p>
+        </main>
+
+        <!-- to show my icon and a navigation tab I used Header semantic tag-->
+        <header>
+          <nav>
+              <ul class="navbar">
+                  <li class="nav_links">
+                    <a href="../index.html">Home
+                      <!-- <div class="imageIcon">
+                        <img src="projects/images/dominoIcon.jpg">
+                        <img src="projects/images/GuessNumbersIcon.png">
+                        <img src="projects/images/okeyIcon.jpg">
+                        <img src="projects/images/ppIcon.png">
+                      </div> -->
+                    </a>
+                  </li>
+                  <li class="nav_links">
+                    <a href="../hobbies/hobbies.html">
+                    Hobbies
+                    <!-- <div class="imageIcon">
+                      <img src="hobbies/images/it.png">
+                      <img src="hobbies/images/papagan.png">
+                      <img src="hobbies/images/tosba.png">
+                    </div> -->
+                    </a>
+                </li>
+                  <li class="nav_links">
+                    <a href="../projects/projects.html">
+                      Projects
+                     <!-- <div class="imageIcon">
+                        <img src="projects/images/dominoIcon.jpg">
+                        <img src="projects/images/GuessNumbersIcon.png">
+                        <img src="projects/images/okeyIcon.jpg">
+                        <img src="projects/images/ppIcon.png">
+                      </div> -->
+                    </a>
+                  </li>
+              </ul>
+          </nav>
+        </header>
+
+        <!-- this is the footer of my page
+        I used it because I want it to stay always in the bottom
+        And as a summary of my page it is a good practice.
+        -->
+        
+      </article>
+    </article>
+    
+    <footer>
+      <h3>All rights reserved <br> @2022</h3>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.6.0.min.js"><\/script>')</script>
+
+    <script src="../js/scripts.js"></script>
+    <script src="../js/hamIcon.js"></script>
+  </body>
+</html>
+

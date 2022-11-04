@@ -17,81 +17,85 @@
     
     <!-- LINKS -->
     <link rel="manifest" href="#site.webmanifest">
-    <link rel="apple-touch-icon" href="#icon.png">
+    <link rel="apple-touch-icon" href="images/icon.png">
+    <link rel="icon" type="image/png" href="../images/icon.png"/>
     
     <!-- CSS LINKS-->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/hamIcon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&display=swap" rel="stylesheet">
 
     <meta name="theme-color" content="#fafafa">
-    <title>A Basic HTML5 Template</title>
+    <title>Ali Göcmen's Portfolio</title>
   </head>
 
   <!-- this is body of my page-->
   <body>
+    <img id="bgImage">
+    <div id="mask"></div>
 
-    <!-- to show my icon and a navigation tab I used Header semantic tag-->
-    <header class="wrapper clearfix">
-      <!-- h1 tag is the most important title tag, so I tried to use one time in my page-->
-      <!-- and to make it more readable and improve the searchabelity-->
-      <h1 class="title">Ali GÖCMEN</h1>
-      <nav>
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="projects/projects.html">Projects</a></li>
-              <li><a href="contact/contact.html">Contact</a></li>
-          </ul>
-      </nav>
-    </header>
-    
-    <!-- this is the main part of my webpage-->
-    <main>
-      <img src="images/myphoto.jpeg" alt="" width="278" height="314"/>
-      <!-- these are some sub parts so I used articles and sections to design these parts-->
-      <article>
-        <header>
-            <h2>Articles</h2>
-        </header>
-        <section>
-            <h2>Painting</h2>
-            <p>I started to painting as a hobby. 
-              <br>For a long time I have had a strong desire to start but somehow I could not accomplish.
-              <br>Today I bought some  <strong>acrylic paints</strong> and painted my first painting.
-            </p>
-        </section>
-        <section>
-            <h2>Powercoders</h2>
-            <p>
-              Last week was very busy and tiring. It was full of activities and lessons. 
-              <br> But I've learnt too much. Also meeting new people and <strong>breaking ices</strong> were very helpful to me.
-              <br> I am happy to be a participant of Powercoders. I hope I will be succesful at the end, and 
-              <br> I can find an intership.
-            </p>
-        </section>
-        <footer>
-            <h3>My Website</h3>
-            <p>
-              With this exercise I've successfully completed to build my skeleton of boilerplate.
-              <br>I will add more relavant content next days.
-            </p>
-            <ul>
-              <li>I added some tags which newly come with HTML5</li>
-              <li>I prepared CSS and JS directories.</li>
-              <li>I tried to make it similar with best practices.</li>
-            </ul>
-        </footer>
+    <article class="content">
+      <article id="showroom">
+
+        <div id="hamburgerMenu">
+          <div id="nav-icon1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <section>
+            <nav>
+              <ul class="hamBar">
+                <li class="ham_links">
+                  <a href="projects/projects.html">Projects</a>
+                </li>
+                <li class="ham_links">
+                  <a href="hobbies/hobbies.html">Hobbies</a>
+                </li>
+                <li class="ham_links">
+                  <a href="contact/contact.html">Contact</a>
+                </li>
+              </ul>
+          </nav>
+          </section>
+        </div>
+
+        <img src="images/myphoto.jpeg" id="passPhoto" alt="photo">
       </article>
-  
-      <aside>
-        <h3>aside</h3>
-          <p>These days I could not find enough time to continue my courses on <strong>Coursera</strong>. 
-          </p>
-      </aside>
-    </main>
 
-    <!-- this is the footer of my page
-    I used it because I want it to stay always in the bottom
-    And as a summary of my page it is a good practice.
-    -->
+      <article id="app">
+        <!-- this is the main part of my webpage-->
+        <main>
+          <div class="introduction_m">Hi! I am Ali Göcmen.<br> I am a Software Developer.</div>
+          <div class="introduction_s"></div>
+        </main>
+
+        <!-- to show my icon and a navigation tab I used Header semantic tag-->
+        <header>
+          <nav>
+              <ul class="navbar">
+                  <li class="nav_links">
+                    <a href="projects/projects.html">Projects</a>
+                  </li>
+                  <li class="nav_links">
+                    <a href="hobbies/hobbies.html">Hobbies</a>
+                </li>
+                  <li class="nav_links">
+                    <a href="contact/contact.html">Contact</a>
+                  </li>
+              </ul>
+          </nav>
+        </header>
+
+        <!-- this is the footer of my page
+        I used it because I want it to stay always in the bottom
+        And as a summary of my page it is a good practice.
+        -->
+        
+      </article>
+    </article>
+    
     <footer>
       <h3>All rights reserved <br> @2022</h3>
     </footer>
@@ -99,7 +103,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.6.0.min.js"><\/script>')</script>
 
-    <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="js/hamIcon.js"></script>
+    <script src="js/textAnimator.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
